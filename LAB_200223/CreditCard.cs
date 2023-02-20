@@ -86,5 +86,16 @@ namespace LAB_200223
         {
             get { return balance; }
         }
+
+        public override string ToString()
+        {
+            return 
+                $"\n\t{cardNumber}\n" +
+                $"\t{ownerName}\n" +
+                $"\t{validityPeriod}\n" +
+                $"\t{pin}\n" +
+                $"\t{creditLimit}\n" +
+                $"\t{balance}\n";
+        }
     }
 }
